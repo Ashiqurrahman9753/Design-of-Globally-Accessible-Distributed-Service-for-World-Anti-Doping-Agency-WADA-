@@ -1,0 +1,2 @@
+# Design-of-Globally-Accessible-Distributed-Service-for-World-Anti-Doping-Agency-WADA-
+ The goal of design and implementation of a globally accessible distributed system for tracking the whereabouts of the athletes with the WADA. The system would provide a securable scale of platform for the athletes to submit their location information for the Anti-Doping Organizations (ADO’s) to access and verify the data shared efficiently.
