@@ -1,19 +1,20 @@
 # Design-of-Globally-Accessible-Distributed-Service-for-World-Anti-Doping-Agency-WADA-
 #WADA Athlete Location Tracking System
-#Overview
+WADA Athlete Location Tracking System
+Overview
 This project outlines the design for a globally accessible distributed system for the World Anti-Doping Agency (WADA) to track the whereabouts of athletes. The system aims to provide a secure and scalable platform for athletes to submit their location information, and for Anti-Doping Organizations (ADOs) to access and verify this data efficiently.
 
-#Project Status
+Project Status
 Note: This project is currently in the design phase. The full design report is available in the repository.
 
-#Features
+Features
 Athlete Registration: Securely collect personal details and set up authentication.
 Location Submission: Athletes submit their location at specific intervals.
 Location Access: ADOs access athlete location data for compliance checks.
 Reporting and Analytics: Tools for monitoring compliance and detecting patterns.
 Profile Management: Athletes update their profile information.
 System Administration: Superusers manage system operations and user permissions.
-#Technologies
+Technologies
 API Gateway: Manages API requests and responses.
 AWS Lambda: Handles stateless functions and rapid scaling.
 Amazon RDS: Provides relational database services with ACID compliance.
@@ -32,5 +33,6 @@ Secure API Protocols: HTTPS for secure connections.
 Data Encryption: Data at rest and in transit encryption using AWS services.
 User Authentication: Managed with AWS Cognito.
 GDPR Compliance: Ensures data privacy and user consent mechanisms.
-#Documentation
+Documentation
 For a detailed view of the design and implementation plan, please refer to the Design Report in this repository.
+
