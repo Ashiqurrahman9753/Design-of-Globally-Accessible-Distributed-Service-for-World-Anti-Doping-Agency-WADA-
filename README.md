@@ -1,38 +1,38 @@
-# Design-of-Globally-Accessible-Distributed-Service-for-World-Anti-Doping-Agency-WADA-
-#WADA Athlete Location Tracking System
-WADA Athlete Location Tracking System
-Overview
-This project outlines the design for a globally accessible distributed system for the World Anti-Doping Agency (WADA) to track the whereabouts of athletes. The system aims to provide a secure and scalable platform for athletes to submit their location information, and for Anti-Doping Organizations (ADOs) to access and verify this data efficiently.
+#  WADA Globally Accessible Distributed Service
 
-Project Status
-Note: This project is currently in the design phase. The full design report is available in the repository.
 
-Features
-Athlete Registration: Securely collect personal details and set up authentication.
-Location Submission: Athletes submit their location at specific intervals.
-Location Access: ADOs access athlete location data for compliance checks.
-Reporting and Analytics: Tools for monitoring compliance and detecting patterns.
-Profile Management: Athletes update their profile information.
-System Administration: Superusers manage system operations and user permissions.
-Technologies
-API Gateway: Manages API requests and responses.
-AWS Lambda: Handles stateless functions and rapid scaling.
-Amazon RDS: Provides relational database services with ACID compliance.
-Amazon DynamoDB: Supports non-relational data storage.
-Kubernetes: Manages containerized applications for horizontal scaling.
-AWS CloudWatch: Monitors system performance and health.
-API Endpoints
-Register Athlete API: POST /api/athletes/register
-Location Submission API: POST /api/locations/submit
-Location Query API: GET /api/locations/query
-Analytics and Reporting API: GET /api/reports/generate
-Profile Management API: PUT /api/athletes/update
-System Administration API: POST /api/admin/operations
-Security and Compliance
-Secure API Protocols: HTTPS for secure connections.
-Data Encryption: Data at rest and in transit encryption using AWS services.
-User Authentication: Managed with AWS Cognito.
-GDPR Compliance: Ensures data privacy and user consent mechanisms.
-Documentation
-For a detailed view of the design and implementation plan, please refer to the Design Report in this repository.
+An AWS-native distributed system designed for tracking athlete whereabouts with a focus on high availability, scalability, and system resilience.
+
+🚀 Performance Benchmarks
+Designed to meet strict global operational standards:
+
+Throughput: 1,000+ requests per second.
+
+Response Time: <2 seconds for location submissions.
+
+Concurrency: Supports 10,000 concurrent users without performance degradation.
+
+Availability: 99.9% uptime using multi-region AWS failover.
+
+🛠 Tech Stack & Infrastructure
+Compute: AWS Lambda (stateless processing) & Amazon EKS (Kubernetes).
+
+Database: Amazon RDS (ACID-compliant relational data) & DynamoDB (high-performance NoSQL).
+
+Networking: Amazon Route 53 (geolocation routing) & CloudFront (CDN).
+
+Security: AWS Cognito for athlete/ADO authentication and GDPR-compliant data handling.
+
+🏗 System Architecture
+Detailed description of the serverless and containerized hybrid model.
+
+🛡 Failure & Resilience Model
+The architecture is designed for "Self-Healing":
+
+Auto-Recovery: EC2 instances automatically reboot or migrate on failure.
+
+Multi-Region Failover: Real-time data replication across 3+ geographic regions.
+
+Observability: Unified logging and real-time monitoring via AWS CloudWatch.
+
 
